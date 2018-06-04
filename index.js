@@ -17,11 +17,11 @@ app.get('/:id', (req, res) => {
   if(!id) {
     res.status(404).json({
       error: "Student record not found at that ID."
-    })
+    });
   } else {
     res.json({
       data: id
-    })
+    });
   }
 });
 
